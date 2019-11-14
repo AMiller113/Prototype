@@ -6,4 +6,123 @@
     android:layout_height="match_parent"
     tools:context=".PersonalityActivity">
 
+    <android.support.constraint.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context=".QuizActivity">
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="wrap_content"
+            android:layout_height="150dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="32dp"
+            android:contentDescription="Owl Picture"
+            android:foregroundGravity="center_vertical|center_horizontal"
+            app:layout_constraintBottom_toTopOf="@+id/PersonalityButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/owl" />
+
+        <Button
+            android:id="@+id/PreferenceButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/holo_purple"
+            android:text="Preferences"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/TopicsButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PersCheckBox"
+            app:layout_constraintTop_toBottomOf="@+id/PersonalityButton" />
+
+        <Button
+            android:id="@+id/PersonalityButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="24dp"
+            android:background="@android:color/holo_purple"
+            android:text="Personality"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/PreferenceButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/PrefCheckBox"
+            app:layout_constraintTop_toBottomOf="@+id/imageView3" />
+
+        <Button
+            android:id="@+id/TopicsButton"
+            android:layout_width="164dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="124dp"
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/holo_purple"
+            android:text="Topics"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/TopicListButton"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/TopicsCheckBox"
+            app:layout_constraintTop_toBottomOf="@+id/PreferenceButton" />
+
+        <CheckBox
+            android:id="@+id/PrefCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/PersonalityButton"
+            app:layout_constraintEnd_toStartOf="@+id/PersonalityButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/PersonalityButton" />
+
+        <CheckBox
+            android:id="@+id/PersCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/PreferenceButton"
+            app:layout_constraintEnd_toStartOf="@+id/PreferenceButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/PreferenceButton" />
+
+        <CheckBox
+            android:id="@+id/TopicsCheckBox"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="90dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="@+id/TopicsButton"
+            app:layout_constraintEnd_toStartOf="@+id/TopicsButton"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@+id/TopicsButton" />
+
+        <Button
+            android:id="@+id/TopicListButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="32dp"
+            android:layout_marginEnd="32dp"
+            android:layout_marginBottom="32dp"
+            android:background="@android:color/holo_green_dark"
+            android:text="JUMP INTO CALL"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/TopicsButton" />
+
+    </android.support.constraint.ConstraintLayout>
 </android.support.constraint.ConstraintLayout>
