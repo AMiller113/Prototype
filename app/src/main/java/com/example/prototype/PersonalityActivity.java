@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class PersonalityActivity extends AppCompatActivity {
 
-    Button prefButton, personalityButton,topicsButton;
+    Button prefButton, personalityButton,topicsButton,jumpIntoCall;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -18,6 +18,7 @@ public class PersonalityActivity extends AppCompatActivity {
         prefButton = findViewById(R.id.PreferenceButton);
         personalityButton = findViewById(R.id.PersonalityButton);
         topicsButton = findViewById(R.id.TopicsButton);
+        jumpIntoCall = findViewById(R.id.TopicListButton);
 
         prefButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -42,6 +43,15 @@ public class PersonalityActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        jumpIntoCall.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), TopicChoiceActivity.class);
+                startActivity(intent);
+            }
+        });
+
     }
 
 

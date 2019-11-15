@@ -8,6 +8,8 @@ import android.widget.Button;
 
 public class QuizActivity extends AppCompatActivity {
 
+    //TODO Make checkboxes check when going back to personality activity
+
     Button submitButton;
 
     @Override
@@ -20,7 +22,7 @@ public class QuizActivity extends AppCompatActivity {
         submitButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PersonalityActivity.class);
+                Intent intent = new Intent(getApplicationContext(), QuizResultActivity.class);
                 startActivity(intent);
             }
         });
