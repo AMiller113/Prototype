@@ -18,7 +18,7 @@ public class PersonalityActivity extends AppCompatActivity {
         prefButton = findViewById(R.id.PreferenceButton);
         personalityButton = findViewById(R.id.PersonalityButton);
         topicsButton = findViewById(R.id.TopicsButton);
-        jumpIntoCall = findViewById(R.id.TopicListButton);
+        jumpIntoCall = findViewById(R.id.randomButton);
 
         prefButton.setOnClickListener(new View.OnClickListener() {
             @Override

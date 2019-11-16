@@ -18,7 +18,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:srcCompat="@drawable/owl" />
+        app:srcCompat="@drawable/logo" />
 
     <TextView
         android:id="@+id/textView2"
@@ -27,7 +27,7 @@
         android:layout_marginStart="32dp"
         android:layout_marginTop="32dp"
         android:layout_marginEnd="32dp"
-        android:layout_marginBottom="16dp"
+        android:layout_marginBottom="8dp"
         android:text="Test Result"
         android:textColor="@android:color/black"
         android:textSize="24sp"
@@ -41,8 +41,8 @@
         android:layout_width="347dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
-        android:layout_marginEnd="32dp"
-        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
         android:orientation="horizontal"
         app:layout_constraintBottom_toTopOf="@+id/button3"
         app:layout_constraintEnd_toEndOf="parent"
@@ -91,13 +91,13 @@
         android:background="@android:color/holo_purple"
         android:text="Another test"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/BackToPrefButton"
+        app:layout_constraintBottom_toTopOf="@+id/BackToPrevButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
 
     <Button
-        android:id="@+id/BackToPrefButton"
+        android:id="@+id/BackToPrevButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="32dp"
@@ -107,13 +107,13 @@
         android:background="@android:color/holo_purple"
         android:text="Back to Previous"
         android:textSize="18sp"
-        app:layout_constraintBottom_toTopOf="@+id/TopicChoiceButton"
+        app:layout_constraintBottom_toTopOf="@+id/TCButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button3" />
 
     <Button
-        android:id="@+id/TopicChoiceButton"
+        android:id="@+id/TCButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="64dp"
@@ -126,14 +126,14 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/BackToPrefButton" />
+        app:layout_constraintTop_toBottomOf="@+id/BackToPrevButton" />
 
     <TextView
         android:id="@+id/textView11"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="128dp"
-        android:layout_marginTop="32dp"
+        android:layout_marginTop="8dp"
         android:layout_marginEnd="128dp"
         android:background="@android:color/holo_purple"
         android:gravity="center"

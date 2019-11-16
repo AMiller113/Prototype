@@ -17,14 +17,14 @@
         android:text="OR"
         android:textSize="30sp"
         android:textColor="@android:color/black"
-        app:layout_constraintBottom_toTopOf="@+id/TopicListButton"
+        app:layout_constraintBottom_toTopOf="@+id/randomButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/QuizButton" />
 
     <Button
-        android:id="@+id/TopicListButton"
+        android:id="@+id/randomButton"
         android:layout_width="0dp"
         android:layout_height="wrap_content"
         android:layout_marginStart="100dp"
@@ -70,6 +70,6 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias=".1"
-        app:srcCompat="@drawable/owl" />
+        app:srcCompat="@drawable/logo" />
 
 </android.support.constraint.ConstraintLayout>

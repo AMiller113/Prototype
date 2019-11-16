@@ -8,14 +8,22 @@ import android.widget.Button;
 
 public class QuizResultActivity extends AppCompatActivity {
 
-    Button jumpIntoCall;
+    Button jumpIntoCall,back;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_result);
 
-        jumpIntoCall = findViewById(R.id.TopicListButton);
+        back = findViewById(R.id.BackToPrevButton);
+        back.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), QuizActivity.class);
+                startActivity(intent);
+            }
+        });
+        jumpIntoCall = findViewById(R.id.TCButton);
         jumpIntoCall.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
