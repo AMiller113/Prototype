@@ -14,7 +14,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_purple"
+        android:background="@drawable/rounded_purple"
         android:gravity="center"
         android:text="*PLACEHOLDER*"
         android:textSize="18sp"
@@ -62,7 +62,7 @@
         android:layout_marginTop="32dp"
         android:layout_marginEnd="128dp"
         android:layout_marginBottom="8dp"
-        android:background="@android:color/holo_purple"
+        android:background="@drawable/rounded_purple"
         android:gravity="center_horizontal|center_vertical"
         android:text="*PLACEHOLDER*"
         android:textSize="18sp"
@@ -88,30 +88,35 @@
             android:id="@+id/radioButton30"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton29"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton28"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton27"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton26"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
     </RadioGroup>
 
@@ -124,7 +129,7 @@
         android:layout_marginEnd="32dp"
         android:layout_marginBottom="8dp"
         android:text="ADD"
-        android:background="@android:color/holo_purple"
+        android:background="@drawable/rounded_purple"
         app:layout_constraintBottom_toTopOf="@+id/BackButton"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -139,7 +144,7 @@
         android:layout_marginEnd="64dp"
         android:layout_marginBottom="32dp"
         android:text="Back"
-        android:background="@android:color/holo_green_dark"
+        android:background="@drawable/rounded_green"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -160,30 +165,35 @@
             android:id="@+id/radioButton35"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton34"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton33"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton32"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
 
         <RadioButton
             android:id="@+id/radioButton31"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:buttonTint="@android:color/darker_gray"
             android:layout_weight="1" />
     </RadioGroup>
 </android.support.constraint.ConstraintLayout>
