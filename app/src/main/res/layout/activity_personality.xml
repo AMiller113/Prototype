@@ -40,7 +40,7 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/TopicsButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/PersCheckBox"
+            app:layout_constraintStart_toEndOf="@+id/PreferencesCheckbox"
             app:layout_constraintTop_toBottomOf="@+id/PersonalityButton" />
 
         <Button
@@ -56,7 +56,7 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/PreferenceButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/PrefCheckBox"
+            app:layout_constraintStart_toEndOf="@+id/PersonalityCheckbox"
             app:layout_constraintTop_toBottomOf="@+id/imageView3" />
 
         <Button
@@ -72,11 +72,11 @@
             android:textSize="24sp"
             app:layout_constraintBottom_toTopOf="@+id/randomButton"
             app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toEndOf="@+id/TopicsCheckBox"
+            app:layout_constraintStart_toEndOf="@+id/TopicsCheckbox"
             app:layout_constraintTop_toBottomOf="@+id/PreferenceButton" />
 
         <CheckBox
-            android:id="@+id/PrefCheckBox"
+            android:id="@+id/PersonalityCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"
@@ -88,7 +88,7 @@
             app:layout_constraintTop_toTopOf="@+id/PersonalityButton" />
 
         <CheckBox
-            android:id="@+id/PersCheckBox"
+            android:id="@+id/PreferencesCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="50dp"
             android:layout_marginStart="90dp"
@@ -100,7 +100,7 @@
             app:layout_constraintTop_toTopOf="@+id/PreferenceButton" />
 
         <CheckBox
-            android:id="@+id/TopicsCheckBox"
+            android:id="@+id/TopicsCheckbox"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginStart="90dp"

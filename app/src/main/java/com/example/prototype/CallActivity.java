@@ -8,7 +8,7 @@ import android.widget.Button;
 
 public class CallActivity extends AppCompatActivity {
 
-    Button quizButton;
+    Button quizButton,randomButton;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -16,11 +16,19 @@ public class CallActivity extends AppCompatActivity {
         setContentView(R.layout.activity_call);
 
         quizButton = findViewById(R.id.QuizButton);
-
         quizButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), PersonalityActivity.class);
+                startActivity(new Intent(getApplicationContext(), PersonalityActivity.class));
+            }
+        });
+
+        randomButton = findViewById(R.id.randomButton);
+        randomButton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getApplicationContext(), SearchActivity.class);
+                intent.putExtra("topic","Random");
                 startActivity(intent);
             }
         });

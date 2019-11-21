@@ -14,12 +14,11 @@ public class QuizResultActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_quiz_result);
-
         back = findViewById(R.id.BackToPrevButton);
         back.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), QuizActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PersonalityActivity.class);
                 startActivity(intent);
             }
         });
